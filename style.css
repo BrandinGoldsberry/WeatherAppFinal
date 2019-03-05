@@ -1,0 +1,177 @@
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#Intro {
+    width: 100%;
+    display: block;
+    background-color: white;
+    box-shadow: 0px 5px 10px 10px #EEEEEEEE;
+}
+
+#sideNav {
+    background-color: white;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 98px;
+    z-index: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#sideNav p {
+    font-size: 36px;
+    margin: 0%;
+    margin-left: 10px;
+    color: black;
+    font-family: 'BenchNine';
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.option {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 4px;
+    color: black;
+    font-family: 'BenchNine';
+    white-space: nowrap;
+    overflow: hidden;
+    border-width: 3px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: #0000AA;
+    background: none;
+    width: 80%;
+    transition-duration: 0.5s;
+}
+
+.option:hover {
+    background-color: #AAAAFF;
+}
+
+#navButton {
+    border: none;
+    background: none;
+}
+
+.navButton {
+    border: none;
+    background: none;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.openMenu {
+    width: 60px;
+    height: auto;
+}
+
+#Title {
+    text-align: Left;
+    margin: 0;
+    color: crimson;
+    padding: 10px;
+    font-size: 60px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+#WeatherContainer {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Day {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    background-color: #0000AA;
+    flex-direction: column;
+    flex: 1;
+    transition: flex-basis 250ms ease-in-out;
+    border-radius: 12px;
+}
+
+.Day:hover {
+    flex-basis: 50px;
+}
+
+.Day p {
+    text-align: center;
+    font-size: 48px;
+    flex: 1;
+    margin: 2px;
+    color: white;
+    font-family: 'BenchNine';
+}
+
+.Hourly {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    background-color: #0000AA;
+    flex-direction: column;
+    flex: 1;
+    flex-direction: row;
+    border-radius: 12px;
+    transition: width 250ms ease-in-out;
+    transform-origin: left;
+    justify-content: flex-start;
+    animation: flexMove 1s forwards;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    overflow: hidden;
+}
+
+@keyframes flexMove {
+    100% {
+        width: 100%;
+    }
+}
+
+.dateTime {
+    justify-content: flex-start;
+    font-size: 48px;
+    flex: 1;
+    margin: 2px;
+    color: white;
+    font-family: 'BenchNine';
+}
+
+.time {
+    justify-content: right;
+    font-size: 48px;
+    flex: 1;
+    margin: 2px;
+    color: white;
+    font-family: 'BenchNine';
+    width: 0px;
+    height: 0px;
+}

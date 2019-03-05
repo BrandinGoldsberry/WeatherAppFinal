@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Open Weather Test</title>
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|Open+Sans:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="Intro">
+        <h1 id="Title"><button id="navButton"><img class="openMenu" src="Icons/PNGs/Menu.png"></button>Your Five Day Forcast</h1>
+    </header>
+    <section id="sideNav">
+        <p>Options</p>
+        <button class="navButton" id="closeBtn">X</button>
+        <button id="showTimes" class="option">Switch to Hourly</button>
+        <button id="showDays" class="option">Switch to Daily</button>
+    </section>
+    <section id="WeatherContainer">
+        <section id="Weather" class="flexContainer">
+            <div id="Day1" class="Day">
+                <p id="date1" class="date"></p>
+                <p id="temp1" class="temp"></p>
+                <p id="weather1" class="weathDesc"></p>
+            </div>
+            <div id="Day2" class="Day">
+                <p id="date2" class="date"></p>
+                <p id="temp2" class="temp"></p>
+                <p id="weather2" class="weathDesc"></p>
+            </div>
+            <div id="Day3" class="Day">
+                <p id="date3" class="date"></p>
+                <p id="temp3" class="temp"></p>
+                <p id="weather3" class="weathDesc"></p>
+            </div>
+            <div id="Day4" class="Day">
+                <p id="date4" class="date"></p>
+                <p id="temp4" class="temp"></p>
+                <p id="weather4" class="weathDesc"></p>
+            </div>
+            <div id="Day5" class="Day">
+                <p id="date5" class="date"></p>
+                <p id="temp5" class="temp"></p>
+                <p id="weather5" class="weathDesc"></p>
+            </div>
+        </section>
+        <section id="WeatherTimes" class="flexContainer2">
+            <div id="HourSet"></div>
+        </section>
+    </section>
+</body>
+</html>
