@@ -49,7 +49,7 @@ $(document).ready(function() {
                 timeTable += "</div><div class='Hourly'><p class='dateTime'>" + months[date.split("-")[1]] + " " + dateToAdd + "</p>";
                 datesPrintedForTime[i] = dateToAdd;
             } else {
-                
+                timeTable += "<p class='time'>" + time + amPm +"</p>";
             }
 
             if(!datesPrinted.includes(dateToAdd) && time > 6 && time < 12 && amPm == "Am") {
